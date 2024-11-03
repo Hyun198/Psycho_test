@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from "react"
 import './quiz.style.css'
-export default function quiz() {
+export default function Quiz() {
 
     const [quizTest, setQuizTest] = useState(null);
     const [selectedOption, setSelectedOption] = useState('');

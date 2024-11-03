@@ -1,8 +1,6 @@
 import Link from "next/link";
 import RevealSection from "./ScrollReveal/RevealSection";
 
-
-
 export default async function Home() {
 
 

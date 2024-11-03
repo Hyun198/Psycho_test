@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from "react"
 import './color.style.css'
-export default function color() {
+export default function Color() {
 
     const [colorTest, setColorTest] = useState(null);
     const [selectedOption, setSelectedOption] = useState('');

@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from "react"
 import './sleep.style.css'
-export default function sleep() {
+export default function Sleep() {
 
     const [sleepTest, setSleepTest] = useState(null);
     const [selectedOption, setSelectedOption] = useState('');

@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from "react"
 import './quiz.style.css'
+import Link from "next/link";
 export default function Quiz() {
 
     const [quizTest, setQuizTest] = useState(null);
@@ -62,7 +63,7 @@ export default function Quiz() {
             {result && (
                 <div className="result">
                     <p>{result}</p>
-                    <a href="/">처음 화면</a>
+                    <Link href="/">처음 화면</Link>
                 </div>
             )}
         </div>

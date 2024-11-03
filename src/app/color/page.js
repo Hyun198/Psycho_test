@@ -62,7 +62,7 @@ export default function Color() {
             {result && (
                 <div className="result">
                     <p>{result}</p>
-                    <a href="/">처음 화면</a>
+                    <Link href="/">처음 화면</Link>
                 </div>
             )}
         </div>

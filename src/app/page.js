@@ -21,49 +21,56 @@ export default async function Home() {
 
       <RevealSection className="reveal-left" animationOptions={{ origin: 'left', distance: '50px', duration: 1000 }}>
         <section className="sec-01">
-          <div className="container">
-            <div className="content">
-              <div className="image">
-                <img src={sleepData[0].img} />
-              </div>
-              <div className="text-box">
-                <h3>{sleepData[0].testTitle}</h3>
-                <p>{sleepData[0].description}</p>
+          <Link href="/sleep">
+            <div className="container">
+              <div className="content">
+                <div className="image">
+                  <img src={sleepData[0].img} />
+                </div>
+                <div className="text-box">
+                  <h3>{sleepData[0].testTitle}</h3>
+                  <p>{sleepData[0].description}</p>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
+
         </section>
       </RevealSection>
 
       <RevealSection className="reveal-right" animationOptions={{ origin: 'right', distance: '50px', duration: 1000 }}>
         <section className="sec-02">
-          <div className="container">
-            <div className="content">
-              <div className="image">
-                <img src={quizData[0].img} />
+          <Link href="/quiz">
+            <div className="container">
+              <div className="content">
+                <div className="image">
+                  <img src={quizData[0].img} />
+                </div>
+                <div className="text-box">
+                  <h3>{quizData[0].testTitle}</h3>
+                  <p>{quizData[0].description}</p>
+                </div>
               </div>
-              <div className="text-box">
-                <h3>{quizData[0].testTitle}</h3>
-                <p>{quizData[0].description}</p>
-              </div>
-            </div>
-          </div>
+            </div></Link>
+
         </section>
       </RevealSection>
 
       <RevealSection className="reveal-bottom" animationOptions={{ origin: 'bottom', distance: '50px', duration: 1000 }}>
         <section className="sec-03">
-          <div className="container">
-            <div className="content">
-              <div className="image">
-                <img src={colorData[0].img} />
+          <Link href="/color">
+            <div className="container">
+              <div className="content">
+                <div className="image">
+                  <img src={colorData[0].img} />
+                </div>
+                <div className="text-box">
+                  <h3>{colorData[0].testTitle}</h3>
+                  <p>{colorData[0].description}</p>
+                </div>
               </div>
-              <div className="text-box">
-                <h3>{colorData[0].testTitle}</h3>
-                <p>{colorData[0].description}</p>
-              </div>
-            </div>
-          </div>
+            </div></Link>
+
         </section>
       </RevealSection>
     </div>

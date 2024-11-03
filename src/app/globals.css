@@ -22,7 +22,7 @@ nav a {
 }
 
 nav a:hover {
-    color: blue;
+    font-size: 17px;
 }
 
 .main-title {
@@ -36,6 +36,13 @@ section {
     justify-content: center;
     align-items: center;
     padding: 80px 100px;
+
+}
+
+
+section a {
+    text-decoration: none;
+    color: #fff;
 }
 
 section .container {
@@ -44,6 +51,11 @@ section .container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+section .container:hover {
+    transform: scale(1.1);
 }
 
 section .container .main-title {

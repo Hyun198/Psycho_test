@@ -13,7 +13,7 @@ export default function sleep() {
 
     const fetchData = async () => {
         try {
-            const response = await fetch("http://localhost:9999/sleepTests")
+            const response = await fetch("https://my-json-server.typicode.com/Hyun198/Psycho_test/sleepTests")
             const data = await response.json()
             setSleepTest(data[0]);
         } catch (error) {

@@ -13,7 +13,7 @@ export default function quiz() {
 
     const fetchData = async () => {
         try {
-            const response = await fetch("http://localhost:9999/quizTests")
+            const response = await fetch("https://my-json-server.typicode.com/Hyun198/Psycho_test/quizTests")
             const data = await response.json()
             setQuizTest(data[0]);
         } catch (error) {

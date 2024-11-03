@@ -13,7 +13,7 @@ export default function color() {
 
     const fetchData = async () => {
         try {
-            const response = await fetch("http://localhost:9999/colorTests")
+            const response = await fetch("https://my-json-server.typicode.com/Hyun198/Psycho_test/colorTests")
             const data = await response.json()
             setColorTest(data[0]);
         } catch (error) {

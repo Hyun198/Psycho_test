@@ -7,7 +7,6 @@ export default function Sleep() {
     const [sleepTest, setSleepTest] = useState(null);
     const [selectedOption, setSelectedOption] = useState('');
     const [result, setResult] = useState('');
-    const [loading, setLoading] = useState(true);
     useEffect(() => {
         fetchData();
     }, [])
@@ -19,8 +18,6 @@ export default function Sleep() {
             setSleepTest(data[0]);
         } catch (error) {
             console.log(error);
-        } finally {
-            setLoading(false);
         }
     }
 

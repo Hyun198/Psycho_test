@@ -32,7 +32,7 @@ export default function Sleep() {
         const selectedDescription = sleepTest.questions[0].options.find(
             option => option.text === selectedOption
         )?.description;
-        setResult(selectedDescription || '선택한 옵션이 없습니다.');
+        setResult(selectedDescription || alert('한가지는 선택해주세요!'));
     }
 
     return (
@@ -60,12 +60,14 @@ export default function Sleep() {
 
             </form>
             <button onClick={handleSubmit}>결과보기</button>
-            {result && (
-                <div className="result">
-                    <p>{result}</p>
-                    <Link href="/">처음 화면</Link>
-                </div>
-            )}
+
+            <div className="result">
+                <p>{result}</p>
+                <Link href="/">
+                    <i className="fas fa-home"></i>
+                </Link>
+            </div>
+
         </div>
     )
 }

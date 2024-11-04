@@ -7,6 +7,7 @@
 .SleepTest-container .description {
     font-size: 16px;
     text-align: center;
+    padding: 10px 5px;
 }
 
 .SleepTest-container .img img {
@@ -21,6 +22,38 @@
     padding: 10px;
 
 }
+
+.SleepTest-container form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.SleepTest-container form div input[type="radio"] {
+    display: none;
+}
+
+
+.SleepTest-container form div label {
+    margin: 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.SleepTest-container form div label:hover {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.SleepTest-container form div input[type="radio"]:checked+label {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    border: 0.3px solid #fff;
+}
+
+
 
 .SleepTest-container button {
     padding: 10px;
@@ -39,4 +72,14 @@
     text-align: center;
     padding: 10px;
     font-size: 17px;
+
+}
+
+
+.SleepTest-container .result a>i {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    border: none;
 }

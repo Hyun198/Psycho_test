@@ -1,6 +1,5 @@
 'use client';
 import Link from "next/link";
-import { useEffect } from "react";
 import dynamic from "next/dynamic";
 
 const RevealSection = dynamic(() => import('../../components/RevealSection'), {
@@ -9,9 +8,6 @@ const RevealSection = dynamic(() => import('../../components/RevealSection'), {
 
 export default function Home({ sleepData, quizData, colorData }) {
 
-    useEffect(() => {
-
-    }, [])
 
     return (
         <div>
@@ -22,7 +18,7 @@ export default function Home({ sleepData, quizData, colorData }) {
                 <Link href="/quiz">문방구에서 물건 구매 테스트</Link>
             </nav>
 
-            {sleepData.length > 0 && (
+            {sleepData?.length > 0 && (
                 <RevealSection className="reveal-left" animationOptions={{ origin: 'left', distance: '50px', duration: 1000 }}>
                     <section className="sec-01">
                         <Link href="/sleep">
@@ -42,7 +38,7 @@ export default function Home({ sleepData, quizData, colorData }) {
                 </RevealSection>
             )}
 
-            {quizData.length > 0 && (
+            {quizData?.length > 0 && (
                 <RevealSection className="reveal-right" animationOptions={{ origin: 'right', distance: '50px', duration: 1000 }}>
                     <section className="sec-02">
                         <Link href="/quiz">
@@ -62,7 +58,7 @@ export default function Home({ sleepData, quizData, colorData }) {
                 </RevealSection>
             )}
 
-            {colorData.length > 0 && (
+            {colorData?.length > 0 && (
                 <RevealSection className="reveal-left" animationOptions={{ origin: 'left', distance: '50px', duration: 1000 }}>
                     <section className="sec-03">
                         <Link href="/color">

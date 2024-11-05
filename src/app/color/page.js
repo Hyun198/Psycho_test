@@ -60,12 +60,14 @@ export default function Color() {
 
             </form>
             <button onClick={handleSubmit}>결과보기</button>
-            {result && (
-                <div className="result">
-                    <p>{result}</p>
-                    <Link href="/">처음 화면</Link>
-                </div>
-            )}
+
+            <div className="result">
+                <p>{result}</p>
+                <Link href="/">
+                    <i className="fas fa-home"></i>
+                </Link>
+            </div>
+
         </div>
     )
 }
